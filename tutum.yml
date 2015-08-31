@@ -1,12 +1,12 @@
-cityexplorer:
-  image: jamiltz/todolite
+todolite-server:
+  image: jamiltz/todolite-server
   ports:
     - "4984:4984"
     - "8000:8000"
   links:
     - couchbaseserver
   tags:
-    - cityexplorer-staging
+    - todolite-production
 couchbaseserver:
   image: jamiltz/mycbserver:v1
   ports:
