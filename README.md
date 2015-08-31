@@ -19,3 +19,16 @@ $ docker-compose up
 ## Deploying to Tutum
 
 Pushing on the master branch of the GitHub repository will automatically trigger a build in Docker Hub and deploy it to Tutum.
+
+The public IP is `178.62.157.91`. The endpoint is to replicate is `http://178.62.157.91:8000/todos`.
+
+And to signup new users:
+
+```
+$ curl -vX POST http://178.62.157.91:8000/signup \
+			-H 'Content-Type: application/json' \
+			-d '{"name": "james", "password": "letmein"}'
+```
+
+## Sign up endpoint
+
