@@ -1,0 +1,10 @@
+todoliteserver:
+  build: .
+  ports:
+    - "8000:8000"
+  links:
+    - couchbaseserver
+couchbaseserver:
+  image: jamiltz/mycbserver:v1
+  ports:
+    - "8091:8091"
