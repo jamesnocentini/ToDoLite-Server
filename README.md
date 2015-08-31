@@ -14,9 +14,8 @@ $ cd ToDoLite-Server
 $ docker-compose up
 ```
 
-## Steps
+**Note**: You may have to wait for about 20 seconds for all containers to be up.
 
-- Copy Dockerfile over
-- Copy run.sh over and change commands
-- docker build -t todoliteserver .
-- docker run -it todoliteserver
+## Deploying to Tutum
+
+Pushing on the master branch of the GitHub repository will automatically trigger a build in Docker Hub and deploy it to Tutum.

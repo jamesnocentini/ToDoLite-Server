@@ -37,4 +37,4 @@ ENTRYPOINT ["/bin/sh", "-c"]
 
 CMD ["/src/run.sh"]
 
-EXPOSE 4984 4985
+EXPOSE 4984 8000

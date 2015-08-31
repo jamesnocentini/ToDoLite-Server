@@ -13,7 +13,7 @@ app.post('/signup', function (req, res) {
 
   var json = req.body;
   var options = {
-    url: 'http://0.0.0.0:4985/smarthome/_user/',
+    url: 'http://0.0.0.0:4985/todos/_user/',
     method: 'POST',
     body: json
   };

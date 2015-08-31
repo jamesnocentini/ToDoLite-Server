@@ -4,6 +4,7 @@
   "databases": {
     "todos": {
       "server": "http://couchbaseserver:8091",
+      "bucket": "default",
       "users": {
         "GUEST": {"disabled": true}
       },
