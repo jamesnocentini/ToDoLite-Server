@@ -28,6 +28,8 @@ $ curl -vX POST http://<ip_address>:8000/signup \
 
 Pushing on the master branch of the GitHub repository will automatically trigger a build in Docker Hub and deploy it to Tutum.
 
+It can take a couple minutes for Docker Hub to build a new image. You can see the status [here](https://hub.docker.com/r/jamiltz/todolite-server/builds/).
+
 The public IP is `178.62.157.91`. The endpoint to replicate to is `http://178.62.157.91:8000/todos`.
 
 And to signup new users:
@@ -37,3 +39,10 @@ $ curl -vX POST http://178.62.157.91:8000/signup \
 			-H 'Content-Type: application/json' \
 			-d '{"name": "james", "password": "letmein"}'
 ```
+
+## Troubleshooting in production
+
+With the Tutum credentials, you can select the `todolite-server` container and access a Terminal to get the list of users with a simple curl command for example (`curl http://localhost:4985/todos/_user/`).
+
+![](https://gyazo.com/cdee0f1d5848f4e95552a2686acabac4)
+
