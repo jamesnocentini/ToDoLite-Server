@@ -44,5 +44,5 @@ $ curl -vX POST http://178.62.157.91:8000/signup \
 
 With the Tutum credentials, you can select the `todolite-server` container and access a Terminal to get the list of users with a simple curl command for example (`curl http://localhost:4985/todos/_user/`).
 
-![](https://gyazo.com/cdee0f1d5848f4e95552a2686acabac4)
+![](https://i.gyazo.com/cdee0f1d5848f4e95552a2686acabac4.gif)
 
